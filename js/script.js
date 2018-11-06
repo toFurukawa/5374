@@ -241,8 +241,7 @@ var TrashModel = function(_lable, _cell, remarks) {
 */
 var CenterModel = function(row) {
   function getDay(center, index) {
-    //var tmp = center[index].split("/");
-    var tmp = center[index].split(",");
+    var tmp = center[index].split("/");
     return new Date(tmp[0], tmp[1] - 1, tmp[2]);
   }
 
