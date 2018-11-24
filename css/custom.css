@@ -204,7 +204,7 @@ a.accordion-toggle-top:hover {
 	text-align: center;
 }
 .cp_actab input[type=radio] + label::after {
-	content: 'BC';
+	content: '▽';
 }
 .cp_actab input[type=radio]:checked + label::after {
 	transform: rotateX(180deg);
