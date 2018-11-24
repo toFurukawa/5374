@@ -134,35 +134,58 @@ a:hover {
 	 text-decoration: underline;
 }
 
-.cp_menu {
-	max-width: 360px;
-	margin: 0 auto;
-	padding: 0;
-}
-.cp_menu a {
-	display: block;
-	padding: 10px;
-	text-decoration: none;
-	color: #000000;
-	line-height: 1;
-}
-.cp_menu label {
-	display: block;
+.cp_actab {
 	position: relative;
-	margin: 0 0 2px 0;
-	padding: 12px;
-	line-height: 1;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 1px;
 	color: #ffffff;
-	background: #1b2538;
-	cursor: pointer;
 }
-.cp_menu label::before {
+.cp_actab input {
 	position: absolute;
-
-	color: #ffffff;
-	right: 0.5em;
-	top: 25%;
+	z-index: -1;
+	opacity: 0;
 }
-.cp_menu input {
-	display: none;
+.cp_actab label {
+	font-weight: bold;
+	line-height: 3;
+	position: relative;
+	display: block;
+	padding: 0 0 0 1em;
+	margin: 0 0 1px 0;
+	cursor: pointer;
+	background: #1b2538;
+}
+.cp_actab .cp_actab-content {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.35s;
+	transition: max-height 0.35s;
+	background: #a9bce2;
+}
+.cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* :checked */
+.cp_actab input:checked ~ .cp_actab-content {
+	max-height: 20em;
+}
+/* Icon */
+.cp_actab label::after {
+	line-height: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	text-align: center;
+}
+.cp_actab input[type=radio] + label::after {
+	content: 'BC';
+}
+.cp_actab input[type=radio]:checked + label::after {
+	transform: rotateX(180deg);
 }
