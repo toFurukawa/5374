@@ -168,7 +168,7 @@ a:hover {
 }
 /* :checked */
 .cp_actab input:checked ~ .cp_actab-content {
-	max-height: 20em;
+ /*max-height: 20em;*/
 }
 /* Icon */
 .cp_actab label::after {
