@@ -179,8 +179,8 @@ a.accordion-toggle-top:hover {
 .cp_actab .cp_actab-content {
 	overflow: hidden;
 	max-height: 0;
-	-webkit-transition: max-height 0.35s;
-	transition: max-height 0.35s;
+	-webkit-transition: max-height none;
+	transition: max-height none;
 	background: #a9bce2;
 }
 .cp_actab .cp_actab-content p {
