@@ -189,7 +189,9 @@ a.accordion-toggle-top:hover {
 }
 /* :checked */
 .cp_actab input:checked ~ .cp_actab-content {
-	max-height: 200em;
+	/*
+	max-height: 20em;
+	*/
 }
 /* Icon */
 .cp_actab label::after {
