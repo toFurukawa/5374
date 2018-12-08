@@ -158,16 +158,10 @@ a.accordion-toggle-top:hover {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
-	margin-bottom: 1px;
+	margin: 0 auto;
 	color: #ffffff;
 }
-.cp_actab ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
 .cp_actab input {
-	display: none;
 	position: absolute;
 	z-index: -1;
 	opacity: 0;
@@ -178,23 +172,24 @@ a.accordion-toggle-top:hover {
 	position: relative;
 	display: block;
 	padding: 0 0 0 1em;
-	margin: 0 0 1px 0;
 	cursor: pointer;
-	background: #1b2538;
+	margin: 0 0 1px 0;
+	background: #191970;
 }
 .cp_actab .cp_actab-content {
 	overflow: hidden;
 	max-height: 0;
 	-webkit-transition: max-height 0.35s;
 	transition: max-height 0.35s;
-	background: #a9bce2;
+	color: #fffafa;
+	background: #0000ff;
 }
 .cp_actab .cp_actab-content p {
 	margin: 1em;
 }
 /* :checked */
 .cp_actab input:checked ~ .cp_actab-content {
- max-height: 60em;
+	max-height: 20em;
 }
 /* Icon */
 .cp_actab label::after {
@@ -209,9 +204,9 @@ a.accordion-toggle-top:hover {
 	transition: all 0.35s;
 	text-align: center;
 }
-.cp_actab input[type=radio] + label::after {
-	content: '▽';
+.cp_actab input[type=checkbox] + label::after {
+	content: '+';
 }
-.cp_actab input[type=radio]:checked + label::after {
-	transform: rotateX(180deg);
+.cp_actab input[type=checkbox]:checked + label::after {
+	transform: rotate(315deg);
 }
