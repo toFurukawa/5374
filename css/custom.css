@@ -161,6 +161,11 @@ a.accordion-toggle-top:hover {
 	margin-bottom: 1px;
 	color: #ffffff;
 }
+.cp_actab ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 .cp_actab input {
 	display: none;
 	position: absolute;
